@@ -11,8 +11,8 @@ Version 1.0
 # Cloud_Group_Chat
 Version 1.0
 
-- Server Size: 10.7 MB
-- Client Size: 11.2 MB
+- Server Size: 10.8 MB
+- Client Size: 11.3 MB
 
 - Allows many to many voice communication
 - Server can launch on home computer (port forward is only needed on server's host system, default is 4444)
