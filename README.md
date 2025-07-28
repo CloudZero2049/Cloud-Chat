@@ -23,4 +23,4 @@ Version 1.01
 - Includes outgoing mic sound slider
 - Has mic check button
 
-See cahngelog for more info
+See change log for more info
