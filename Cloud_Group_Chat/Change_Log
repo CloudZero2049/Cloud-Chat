@@ -1,0 +1,22 @@
+[Version 1.00] 7/26/2025
+- Allows many to many voice communication
+- Server can launch on home computer (port forward is only needed on server's host system, default is 4444)
+- Editable Target IP and socket on client
+- This version does not use password protection (yet)
+- Client automatically saves last communication data into a JSON file located in Cloud_Chat.exe directory
+- Client inputs a user name (shown on server)
+- You can launch 2 clients and mute one to test microphone
+
+[Client Version 1.01] 7/27/2025
+- Added a slider for outgoing mic volume (100 is default)
+- Added a mic-check toggle button (muting will distort audio while running)
+- Now sends a mute_toggle packet when mute button is pressed
+- Now sends a disconnect packet when disconnecting
+- All outgoing traffic now uses the same port (allows server to track clients better)
+- Added Cloud Chat Icon to window
+
+[Server Version 1.01] 7/27/2025
+- Added new logic for handling muted and disconnecting clients using client packets
+- A muted client will time out after 15 minutes (900 seconds on server counter)
+- Consolidated client_list = {}  # {(ip, port): {name:str, muted:bool, last_seen:float}}
+- Added Cloud Chat Server Icon to window
