@@ -1,5 +1,5 @@
 # Cloud_Chat
-Version 1.0
+Version 1.00
 
 - Size: 15.6 MB
 - Allows 1-1 voice communication
@@ -9,10 +9,10 @@ Version 1.0
 - set IP to your local IP shown at the top to test microphone
 
 # Cloud_Group_Chat
-Version 1.0
+Version 1.01
 
 - Server Size: 10.8 MB
-- Client Size: 11.3 MB
+- Client Size: 24.1 MB
 
 - Allows many to many voice communication
 - Server can launch on home computer (port forward is only needed on server's host system, default is 4444)
@@ -20,4 +20,7 @@ Version 1.0
 - This version does not use password protection (yet)
 - Client automatically saves last communication data into a JSON file located in Cloud_Chat.exe directory
 - Client inputs a user name (shown on server)
-- You can launch 2 clients and mute one to test microphone
+- Includes outgoing mic sound slider
+- Has mic check button
+
+See cahngelog for more info
