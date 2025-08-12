@@ -42,7 +42,8 @@ Instructions for Cloud_Chat
 4) There will be a popup blocking the file, click to run it anyway. I built this by hand, trust me there's no viruses here.
 5) Enter Eachother's Local IP's and click Update button
 6) Enter Eachother's forwarded port and click Update button
-7) Click connect
+7) Both clients enter the same password
+8) Click connect
 
 Version 1.00
 
