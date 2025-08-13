@@ -1,23 +1,24 @@
 
-# Cloud_Group_Chat
-Instructions for Cloud_Group_Chat
+# Cloud_Chat
+Instructions for Cloud_Chat
 
 1) One person downloads the .exe files for the server and client (nothing installs, just run the .exe files)
 2) Everyone else only needs to download the .exe file for the client (nothing installs, just run the .exe file)
-3) There will be a popup blocking the file, click to run it anyway. I built this by hand, trust me there's no viruses here.
+3) There is an auto-update option starting at version 1.0.2 that checks for new versions.
 4) The person with the server must go into their router and port forward a port to use (default is 4444)
-5) The person with the server:
+5) There will be a popup blocking the file, click to run it anyway. I built this by hand, trust me there's no viruses here.
+6) The person with the server:
    a) Can leave server ip at the deafult (all 0s)
    b) Make sure the server port is same as the port that was forwarded in router
    c) Using their client, copy the local IP at the top and give it to the other users
    d) Connect server
-6) All Clients:
+7) All Clients:
    a) Enter the server IP and click the update button
    b) Enter the server port and click the update button
    b) Enter a name so the server can identify you
    b) Connect to server
-7) When finished, disconnect, shutdown, and close
-8) A JSON file is created on close to save the last information entered. If you run into issues or (if there's an update) delete the old JSON file to prevent errors.
+8) When finished, disconnect, shutdown, and close
+9) A JSON file is created on close to save the last information entered. If you run into issues or (if there's an update) delete the old JSON file to prevent errors.
 
 Version 1.01
 
@@ -33,8 +34,8 @@ Version 1.01
 - Includes outgoing mic sound slider
 - Has mic check button
 
-# Cloud_Chat
-Instructions for Cloud_Chat
+# Cloud_Chat_1on1
+Instructions for Cloud_Chat_1on1
 
 1) This is for 1-1 conversations
 2) Both users must go into their router and port forward a port to use (default is 4444). To make it so only one person needs to do this, use Cloud_Group_Chat instead
