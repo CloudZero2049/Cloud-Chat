@@ -1,0 +1,12 @@
+Version 1.0.0
+- Initial Files created
+
+Version 1.0.1
+- Mic check button added
+- Outgoing mic volume slider added
+- More robust server-client connectivity
+
+Version 1.0.2
+- Added text chat
+- Both client and server will check for updates on launch
+  -> updates are automatic and replace the current file
