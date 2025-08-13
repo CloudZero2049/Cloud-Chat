@@ -1,6 +1,7 @@
 
 # Cloud_Chat
 Instructions for Cloud_Chat
+--> On the right side of this page click "Releases" to see the newest version
 
 1) One person downloads the .exe files for the server and client (nothing installs, just run the .exe files)
 2) Everyone else only needs to download the .exe file for the client (nothing installs, just run the .exe file)
