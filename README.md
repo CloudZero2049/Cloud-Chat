@@ -4,7 +4,7 @@ Instructions for Cloud_Chat
 
 1) One person downloads the .exe files for the server and client (nothing installs, just run the .exe files)
 2) Everyone else only needs to download the .exe file for the client (nothing installs, just run the .exe file)
-3) There is an auto-update option starting at version 1.0.2 that checks for new versions.
+3) There is an auto-update option starting at version 1.0.2 that checks for new versions. The update is automatic and replaces the old file.
 4) The person with the server must go into their router and port forward a port to use (default is 4444)
 5) There will be a popup blocking the file, click to run it anyway. I built this by hand, trust me there's no viruses here.
 6) The person with the server:
@@ -20,15 +20,15 @@ Instructions for Cloud_Chat
 8) When finished, disconnect, shutdown, and close
 9) A JSON file is created on close to save the last information entered. If you run into issues or (if there's an update) delete the old JSON file to prevent errors.
 
-Version 1.01
+Version 1.02
 
-- Server Size: 10.8 MB
-- Client Size: 24.1 MB
+- Server Size: 13.7 MB
+- Client Size: 23.9 MB
 
-- Allows many to many voice communication
+- Allows many to many voice communication and text chat
 - Server can launch on home computer (port forward is only needed on server's host system, default is 4444)
 - Editable Target IP and socket on client
-- This version does not use password protection (yet)
+- This version does not use password protection (planned)
 - Client automatically saves last communication data into a JSON file located in Cloud_Chat.exe directory
 - Client inputs a user name (shown on server)
 - Includes outgoing mic sound slider
