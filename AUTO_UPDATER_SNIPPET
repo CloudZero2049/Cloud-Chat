@@ -1,0 +1,93 @@
+# These are the functions that run the auto updater as explained in the README file.
+
+# Handle update replacement
+if "--replace" in sys.argv:
+    try:
+        old_exe = sys.argv[2]
+        new_exe = sys.argv[0]
+
+        temp_dir = tempfile.gettempdir()
+        bat_path = os.path.join(temp_dir, "update_script.bat")
+        vbs_path = os.path.join(temp_dir, "update_script.vbs")
+
+        # Write the batch script
+        with open(bat_path, "w") as bat:
+            bat.write(f"""@echo off
+:waitloop
+tasklist | findstr /I "{os.path.basename(old_exe)}" >nul
+if not errorlevel 1 (
+    timeout /t 1 >nul
+    goto waitloop
+)
+timeout /t 2 >nul
+copy /Y "{new_exe}" "{old_exe}" >nul
+timeout /t 1 >nul
+start "" "{old_exe}"
+timeout /t 1 >nul
+del "{new_exe}" >nul
+del "{bat_path}" >nul
+exit
+""")
+
+        # Write the VBS launcher (runs BAT silently, then deletes itself)
+        with open(vbs_path, "w") as vbs:
+            vbs.write(f"""Set WshShell = CreateObject("WScript.Shell")
+WshShell.Run chr(34) & "{bat_path}" & chr(34), 0
+
+' Wait a moment to ensure BAT starts
+WScript.Sleep 500
+
+' Delete this VBS file
+Dim fso
+Set fso = CreateObject("Scripting.FileSystemObject")
+fso.DeleteFile WScript.ScriptFullName, True
+Set fso = Nothing
+""")
+
+        # Run the VBS (which runs the BAT invisibly)
+        subprocess.Popen(["wscript.exe", vbs_path], shell=False)
+
+        # Exit updater immediately
+        sys.exit(0)
+
+    except Exception as e:
+        messagebox.showerror("Update Error", f"Failed to replace file:\n{e}")
+        sys.exit(1)
+
+# Update Functions
+def check_for_update():
+    try:
+        response = requests.get(VERSION_URL, timeout=5)
+        
+        if response.status_code == 200:
+            version_data = response.json()
+            latest = version_data.get("server_version", SERVER_VERSION)
+            
+            if latest != SERVER_VERSION:
+                if messagebox.askyesno("Update Available", f"A new version ({latest}) is available. Download and restart now? (The program will close and the new version will launch automatically)"):
+                    download_and_restart()
+        else:
+            print("Failed to fetch version info.")
+    except Exception as e:
+        print(f"Error checking version: {e}")
+
+def download_and_restart():
+    try:
+        # Save to a temporary file
+        tmp_path = os.path.join(tempfile.gettempdir(), "Cloud_Chat_Server_new.exe")
+
+        with requests.get(UPDATE_URL, stream=True) as r:
+            r.raise_for_status()
+            with open(tmp_path, "wb") as f:
+                for chunk in r.iter_content(1024*1024):
+                    f.write(chunk)
+
+        # Launch the updater (new file) with args: old_path new_path
+        old_exe = sys.executable
+        subprocess.Popen([tmp_path, "--replace", old_exe], close_fds=True)
+
+        # Close current app
+        sys.exit(0)
+
+    except Exception as e:
+        messagebox.showerror("Update Failed", f"Could not update:\n{e}")
