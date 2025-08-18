@@ -1,12 +1,24 @@
-Version 1.0.0
-- Initial Files created
+Version 1.0.3
+- text chat button turns on/off when connected/disconnected (send_btn.config(state="normal"))
+- You can now name servers
+- Server settings now save to a JSON file in host directory
+- Fixed double chat send from Unknown user
+- Send connected user information to client's text box (Testing)
+- User unmutes automatically when disconnecting (also prevents timeout when joining)
+- User toggles mute off server side when disconnecting
+- Fixed client list not in global scope in server_loop(), update_clients_display(), and stop_server()
+- Fixed Disconnecting not immediately removing client from client_list
+- add versions to saved date to check compatibility
+
+Version 1.0.2
+- Added text chat
+- Both client and server will check for updates on launch
+  -> updates are automatic and replace the current file
 
 Version 1.0.1
 - Mic check button added
 - Outgoing mic volume slider added
 - More robust server-client connectivity
 
-Version 1.0.2
-- Added text chat
-- Both client and server will check for updates on launch
-  -> updates are automatic and replace the current file
+Version 1.0.0
+- Initial Files created
