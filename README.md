@@ -10,6 +10,7 @@
    6) Relanch the app and everything should then update like normal
 - For the normal "Allow program to run" popup, you can click "more info" and run/allow them.
 - I built these from scratch in python for my friends and I to use, I assure you there are no viruses here.
+- I have created a file here called AUTO_UPDATER_SNIPPET that shows the exact code used in the auto-updater (from version 1.0.3) to ease your mind.
 - If you want to avoid all of this you can download directly from Releases to the right of this page
 
 # Cloud_Chat
