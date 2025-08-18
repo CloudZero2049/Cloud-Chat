@@ -1,5 +1,10 @@
 # These are the functions that run the auto updater as explained in the README file.
 
+# Update settings
+SERVER_VERSION = "1.0.3"
+VERSION_URL = "https://raw.githubusercontent.com/CloudZero2049/Cloud-Chat/main/VERSION.json"
+UPDATE_URL = "https://github.com/CloudZero2049/Cloud-Chat/releases/latest/download/Cloud_Chat_Server.exe"
+
 # Handle update replacement
 if "--replace" in sys.argv:
     try:
