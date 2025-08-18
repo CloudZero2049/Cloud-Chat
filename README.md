@@ -1,6 +1,14 @@
 
-#IMPORTANT NOTE:
--Because I don't have the money to pay for a publisher certificate, there will be popups warning you about the files. You can click "more info" and run/allow them. I built these from scratch in python for my friends and I to use, I assure you there are no viruses here.
+# IMPORTANT NOTE:
+- Because I don't have the money to pay for a publisher certificate, there will be popups warning you about the files.
+- In particular, the automatic update system will likely cause windows defender to mark the files as a virus. Here are the steps of how the updater works to explain why:
+   1) Check my GitHub VERSION.json file for newest version
+   2) Download the newest version from Released into the temp folder with a temporary name
+   3) The new file is launched, renamed to the normal name, moved to the current files directory, and overwrites the exisitng file
+   4) This behavior can be seen as code injection and similar, so the computer will prevent it from running. You should see a windows defender popup in the corner, click that.
+   5) Look for a button/link to choose an action, click to allow it to run. Then there should be a button below that area to do the decion made.
+- For the normal "Allow program to run" popup, you can click "more info" and run/allow them.
+- I built these from scratch in python for my friends and I to use, I assure you there are no viruses here.
 
 # Cloud_Chat
 Instructions for Cloud_Chat
