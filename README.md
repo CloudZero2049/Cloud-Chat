@@ -9,6 +9,7 @@
    5) Look for a button/link to choose an action, click to allow it to run. Then there should be a button below that area to do the decion made.
 - For the normal "Allow program to run" popup, you can click "more info" and run/allow them.
 - I built these from scratch in python for my friends and I to use, I assure you there are no viruses here.
+- If you want to avoid all of this you can download directly from Releases to the right of this page
 
 # Cloud_Chat
 Instructions for Cloud_Chat
