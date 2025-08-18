@@ -1,4 +1,7 @@
 
+#IMPORTANT NOTE
+Because I don't have the money to pay for a publisher certificate, there will be popups warning you about the files. You can click "more info" and run/allow them. I built these from scratch in python for my friends and I to use, I assure you there are no viruses here.
+
 # Cloud_Chat
 Instructions for Cloud_Chat
 
