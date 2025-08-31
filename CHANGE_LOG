@@ -1,3 +1,14 @@
+Version 1.0.4
+- Fixed client not disconnecting when timed out of a server
+- Added a new option menu for both server and client
+- Added server ability to turn timeouts on and off
+- Added server ability to set timeout durations
+- Added timeouts enabled to server JSON save file
+- Added timeout durations to server JSON save file
+- Fixed server IP not having a global variable
+- Renamed server JSON save file variables to "server_version", "server_name", "server_ip" and "server_port"
+- Added a check to verify that Server is same version as client when connecting
+
 Version 1.0.3
 - text chat button turns on/off when connected/disconnected (send_btn.config(state="normal"))
 - You can now name servers
