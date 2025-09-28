@@ -35,19 +35,22 @@ Instructions for Cloud_Chat
 9) When finished, disconnect, shutdown, and close
 10) A JSON file is created on close to save the last information entered. If you run into issues or (if there's an update) delete the old JSON file to prevent errors.
 
-Version 1.04
+Version 1.05
 
+- Client Size: 30.3 MB
 - Server Size: 13.7 MB
-- Client Size: 23.9 MB
+
 
 - Allows many to many voice communication and text chat
 - Server can launch on home computer (port forward is only needed on server's host system, default is 4444)
 - Both server and client have an options menu for selecting IP, socket, and more
 - Editable Target IP and socket on client
-- This version does not use password protection (possibly planned)
+- Servers have optional password protection (new in Version 1.05)
 - Client and Server automatically saves IP, socket, and name data into a JSON file located in Cloud_Chat.exe directory
 - Server also automatically saves timeout settings
 - Client inputs a user name (shown on server)
+- Clients can view all server clients in options menu (new in Version 1.05)
+- Clients have voice notifications (toggle in options) (new in Version 1.05)
 - Includes outgoing mic sound slider
 - Has mic check button
 
