@@ -1,3 +1,7 @@
+## License
+This project is licensed under the PolyForm Noncommercial License 1.0.0.  
+You may use, modify, and share this code for noncommercial purposes only.  
+See the LICENSE file for details.
 
 # IMPORTANT NOTE:
 - Because I don't have the money to pay for a publisher certificate, there will be popups warning you about the files, some may ask you to send the files to microsodt (or others). PLEASE DO NOT SEND MY PROGRAM TO MICROSOFT (or any other company)
