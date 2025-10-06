@@ -43,8 +43,8 @@ Instructions for Cloud_Chat
 
 Version 1.06
 
-- Client Size: 30.4 MB
-- Server Size: 13.7 MB
+Client Size: 30.4 MB
+Server Size: 13.7 MB
 
 
 - Allows many to many voice communication and text chat
