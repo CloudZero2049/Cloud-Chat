@@ -41,10 +41,10 @@ Instructions for Cloud_Chat
 9) When finished, disconnect, shutdown, and close
 10) A JSON file is created on close to save the last information entered. If you run into issues or (if there's an update) delete the old JSON file to prevent errors.
 
-Version 1.06
+### Version 1.06
 
-Client Size: 30.4 MB
-Server Size: 13.7 MB
+### Client Size: 30.4 MB
+### Server Size: 13.7 MB
 
 
 - Allows many to many voice communication and text chat
