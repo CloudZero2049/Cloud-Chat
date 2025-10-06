@@ -60,25 +60,4 @@ Version 1.06
 - Includes outgoing mic sound slider
 - Has mic check button
 
-# Cloud_Chat_1on1
-Instructions for Cloud_Chat_1on1
-
-1) This is for 1-1 conversations
-2) Both users must go into their router and port forward a port to use (default is 4444). To make it so only one person needs to do this, use Cloud_Group_Chat instead
-3) Both users download the client .exe file (nothing installs, just run the .exe file)
-4) There will be a popup blocking the file, click to run it anyway. I built this by hand, trust me there's no viruses here.
-5) Enter Eachother's Local IP's and click Update button
-6) Enter Eachother's forwarded port and click Update button
-7) Both clients enter the same password
-8) Click connect
-
-Version 1.00
-
-- Size: 15.6 MB
-- Allows 1-1 voice communication
-- Editable Target IP and socket (both parties port forward the socket using UDP, default is 4444)
-- uses password-protected AES encryption (both parties put in same password)
-- Automatically saves last communication data into a JSON file located in Cloud_Chat.exe directory
-- set IP to your local IP shown at the top to test microphone
-
-See change log for more info
+See change logs in releases for more info
